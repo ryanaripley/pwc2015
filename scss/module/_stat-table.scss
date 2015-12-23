@@ -1,0 +1,29 @@
+.stat-table {
+
+	table {
+		border-top: 2px solid rgba(255,255,255,.3);
+		margin: 0 auto 1.5em;
+		width: 100%;
+
+		@media (min-width: $bp-small) {
+			width: 90%;
+		}
+
+		@media (min-width: $bp-medium) {
+			width: 80%;
+		}
+
+	}
+
+	td {
+		padding: .2em 0;
+		border-bottom: 2px solid rgba(255,255,255,.3);
+	}
+
+	td:last-child {
+		text-align: right;
+
+	}
+
+
+}

@@ -1,0 +1,118 @@
+.site-header {
+	background: $pp-black;
+	box-shadow: 0 3px 15px rgba(0,0,0,.3);
+	position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+	transition: background .15s ease-in-out;
+	z-index: 5;
+
+	.site-branding > .menu-toggle {
+		float: right;
+		margin-left: auto;
+	}
+
+	ul {
+		box-shadow: -5px 0 10px rgba(0,0,0,.3);
+		background: $pp-black;
+		list-style-type: none;
+		margin: 0;
+		min-width: 50%;
+		padding: 0;
+		position: fixed;
+			top: 0;
+			right: -90%;
+			bottom: 0;
+		transition: right .15s ease-in-out;
+		z-index: 10;
+
+		.menu-toggle {
+			text-align: right;
+			width: 100%;
+		}
+
+	}
+
+	.site-subtitle,
+	.menu-toggle,
+	a {
+		display: inline-block;
+		font-family: "WilsonText-Bold";
+		font-size: 1em;
+		letter-spacing: .05em;
+		line-height: 1em;
+		padding: .8em 1.2em .6em;
+		text-decoration: none;
+		text-transform: uppercase;
+		-webkit-font-smoothing: antialiased;
+
+	}
+	
+	.menu-toggle,
+	a {
+		cursor: pointer;
+	}
+
+	.menu-toggle:hover, 
+	.menu-toggle:target,
+	a:hover, 
+	a:target {
+		color: $sp-blue;
+	}
+
+	@media (min-width: 680px) {
+
+		@include group;
+
+		.site-branding {
+			float: left;
+		}
+
+		.menu-toggle {
+			display: none;
+		}
+
+		ul {
+			background: none;
+			box-shadow: none;
+			display: flex;
+			float: right;
+			min-width: auto;
+			position: relative;
+				top: auto;
+				right: auto;
+				left: auto;
+		}
+
+		.site-subtitle,
+		.menu-toggle,
+		a {
+			font-size: 1rem;
+			padding: .8em .6em;
+		}
+
+	}
+
+}
+
+.menu-open .site-header {
+
+	background: $sp-black;
+
+	ul {
+		right: 0;
+	}
+
+}
+
+.site-header .site-subtitle {
+	display: none;
+	padding-right: 0;
+	padding-left: 0;
+
+	@media (min-width: 860px) {
+		display: inline-block;
+	}
+
+}

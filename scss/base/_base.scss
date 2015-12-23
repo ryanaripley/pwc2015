@@ -1,0 +1,13 @@
+a {
+  color: inherit;
+  text-decoration: underline;
+  transition: color .1s ease-in-out;
+}
+
+a:hover, a:focus {
+  color: white;
+}
+
+img {
+	max-width: 100%;
+}

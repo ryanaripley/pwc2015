@@ -1,0 +1,47 @@
+#letter {
+
+	.photo {
+		padding: .8em;
+		img {
+			border-radius: 50%;
+		}
+	}
+
+	.signature {
+		
+		.signature-name,
+		.signature-title {
+			font-size: .8em;
+			padding-right: .4em;
+		}
+		.signature-name {
+			margin-top: -1em;
+		}
+	}
+
+	@media (max-width: $bp-small) {
+		.grid-item {
+	  		width: 50%;
+	  	}
+
+		.grid-item:first-of-type {
+			margin-bottom: 0;
+			padding: 0 20%;
+			width: 100%;
+		}
+	}
+
+	@media (min-width: $bp-small) {
+		.signature {
+			padding-top: 1em;
+		}
+		p,
+		.signature-name,
+		.signature-title {
+			font-size: .8em;
+			padding-right: .3em;
+		}
+	}
+
+}
+

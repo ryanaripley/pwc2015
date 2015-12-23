@@ -1,0 +1,236 @@
+
+{
+	"fellows": [
+		{
+			"first": "Sharif",
+			"last": "Abu-Hamdeh",
+			"img": "sharif-abu-hamdeh.jpg",
+			"url": "https://pwcenter.org/profile/sharif-abu-hamdeh"
+		},
+		{
+			"first": "Karen",
+			"last": "Hartman",
+			"img": "karen-hartman.jpg",
+			"url": "https://pwcenter.org/profile/karen-hartman"
+		},
+		{
+			"first": "Aditi Brennan",
+			"last": "Kapil",
+			"img": "aditi-brennan-kapil.jpg",
+			"url": "https://pwcenter.org/profile/aditi-brennan-kapil"
+		},
+		{
+			"first": "Max",
+			"last": "Delgado",
+			"img": "max-delgado.jpg",
+			"url": "https://pwcenter.org/profile/max-delgado"
+		},
+		{
+			"first": "Basil",
+			"last": "Kreimendahl",
+			"img": "basil-kreimendahl.jpg",
+			"url": "https://pwcenter.org/profile/basil-kreimendahl"
+		},
+		{
+			"first": "Mathew",
+			"last": "Lefebvre",
+			"img": "mathew-lefebvre.jpg",
+			"url": "https://pwcenter.org/profile/mathew-lefebvre"
+		},
+		{
+			"first": "Steve",
+			"last": "Moulds",
+			"img": "steve-moulds.jpg",
+			"url": "https://pwcenter.org/profile/steve-moulds"
+		},
+		{
+			"first": "Junauda",
+			"last": "Petrus",
+			"img": "junauda-petrus.jpg",
+			"url": "https://pwcenter.org/profile/junauda-petrus"
+		},
+		{
+			"first": "Harrison David",
+			"last": "Rivers",
+			"img": "harrison-david-rivers.jpg",
+			"url": "https://pwcenter.org/profile/harrison-david-rivers"
+		},
+		{
+			"first": "Kate",
+			"last": "Tarker",
+			"img": "kate-tarker.jpg",
+			"url": "https://pwcenter.org/profile/kate-tarker"
+		},
+		{
+			"first": "Austene",
+			"last": "Van",
+			"img": "austene-van.jpg",
+			"url": "https://pwcenter.org/profile/austene-van"
+		},
+		{
+			"first": "Josh",
+			"last": "Wilder",
+			"img": "josh-wilder.jpg",
+			"url": "https://pwcenter.org/profile/josh-wilder"
+		},
+		{
+			"first": "Sally",
+			"last": "Wingert",
+			"img": "sally-wingert.jpg",
+			"url": "https://pwcenter.org/profile/sally-wingert"
+		},
+		{
+			"first": "Deborah",
+			"last": "Yarchun",
+			"img": "deborah-yarchun.jpg",
+			"url": "https://pwcenter.org/profile/deborah-yarchun"
+		}
+	],
+	"coreWriters": [
+		{
+			"first": "Lee",
+			"last": "Blessing",
+			"img": "lee-blessing.jpg",
+			"url": "https://pwcenter.org/profile/lee-blessing"
+		},
+		{
+			"first": "George",
+			"last": "Brant",
+			"img": "george-brant.jpg",
+			"url": "https://pwcenter.org/profile/george-brant"
+		},
+		{
+			"first": "Carlyle",
+			"last": "Brown",
+			"img": "carlyle-brown.jpg",
+			"url": "https://pwcenter.org/profile/carlyle-brown"
+		},
+		{
+			"first": "Constance",
+			"last": "Congdon",
+			"img": "constance-congdon.jpg",
+			"url": "https://pwcenter.org/profile/constance-congdon"
+		},
+		{
+			"first": "Philip",
+			"last": "Dawkins",
+			"img": "philip-dawkins.jpg",
+			"url": "https://pwcenter.org/profile/philip-dawkins"
+		},
+		{
+			"first": "Jenny Connell",
+			"last": "Davis",
+			"img": "jenny-connell-davis.jpg",
+			"url": "https://pwcenter.org/profile/jenny-connell-davis"
+		},
+		{
+			"first": "Gabriel Jason",
+			"last": "Dean",
+			"img": "gabriel-jason-dean.jpg",
+			"url": "https://pwcenter.org/profile/gabriel-jason-dean"
+		},
+		{
+			"first": "Christine",
+			"last": "Evans",
+			"img": "christine-evans.jpg",
+			"url": "https://pwcenter.org/profile/christine-evans"
+		},
+		{
+			"first": "Barbara",
+			"last": "Field",
+			"img": "barbara-field.jpg",
+			"url": "https://pwcenter.org/profile/barbara-field"
+		},
+		{
+			"first": "Sarah",
+			"last": "Gubbins",
+			"img": "sarah-gubbins.jpg",
+			"url": "https://pwcenter.org/profile/sarah-gubbins"
+		},
+		{
+			"first": "Idris",
+			"last": "Goodwin",
+			"img": "idris-goodwin.jpg",
+			"url": "https://pwcenter.org/profile/idris-goodwin"
+		},
+		{
+			"first": "Jeffrey",
+			"last": "Hatcher",
+			"img": "jeffrey-hatcher.jpg",
+			"url": "https://pwcenter.org/profile/jeffrey-hatcher"
+		},
+		{
+			"first": "Carson",
+			"last": "Kreitzer",
+			"img": "carson-kreitzer.jpg",
+			"url": "https://pwcenter.org/profile/carson-kreitzer"
+		},
+		{
+			"first": "Qui",
+			"last": "Nguyen",
+			"img": "qui-nguyen.jpg",
+			"url": "https://pwcenter.org/profile/qui-nguyen"
+		},
+		{
+			"first": "Marion",
+			"last": "McClinton",
+			"img": "marion-mcclinton.jpg",
+			"url": "https://pwcenter.org/profile/marion-mcclinton"
+		},
+		{
+			"first": "Gregory",
+			"last": "Moss",
+			"img": "gregory-moss.jpg",
+			"url": "https://pwcenter.org/profile/gregory-moss"
+		},
+		{
+			"first": "Kira",
+			"last": "Obolensky",
+			"img": "kira-obolensky.jpg",
+			"url": "https://pwcenter.org/profile/kira-obolensky"
+		},
+		{
+			"first": "John",
+			"last": "Olive",
+			"img": "john-olive.jpg",
+			"url": "https://pwcenter.org/profile/john-olive"
+		},
+		{
+			"first": "Susan Soon He",
+			"last": "Stanton",
+			"img": "susan-soon-he-stanton.jpg",
+			"url": "https://pwcenter.org/profile/susan-soon-he-stanton"
+		},
+		{
+			"first": "Ken",
+			"last": "Urban",
+			"img": "ken-urban.jpg",
+			"url": "https://pwcenter.org/profile/ken-urban"
+		},
+		{
+			"first": "Joe",
+			"last": "Waechter",
+			"img": "joe-waechter.jpg",
+			"url": "https://pwcenter.org/profile/joe-waechter"
+		},
+		{
+			"first": "Kathryn",
+			"last": "Walat",
+			"img": "kathryn-walat.jpg",
+			"url": "https://pwcenter.org/profile/kathryn-walat"
+		},
+		{
+			"first": "Ken",
+			"last": "Weitzman",
+			"img": "ken-weitzman.jpg",
+			"url": "https://pwcenter.org/profile/ken-weitzman"
+		},
+		{
+			"first": "Lauren",
+			"last": "Yee",
+			"img": "lauren-yee.jpg",
+			"url": "https://pwcenter.org/profile/lauren-yee"
+		}
+	]
+
+}

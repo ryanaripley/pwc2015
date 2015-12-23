@@ -1,0 +1,49 @@
+#title {
+  background-color: $pp-blue;
+  position: relative;
+  z-index: 15;
+
+  @media (min-width: $bp-small) {
+    height: 96%;
+    @include bg-gradient-animation;
+  }
+
+  .subtitle {
+    color: white;
+    font-size: 1.4em;
+    margin-top: .4em;
+  }
+
+  .pwc-logo {
+    margin-bottom: 1em;
+    width: 16em;
+  }
+
+  .logo-wrapper {
+    @include group;
+  }
+
+}
+
+.title-inside {
+  padding: 4em 0 8em;
+  @media (min-width: $bp-small) {
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.scroll-message {
+  animation: scrollMessage 2.5s;
+  bottom: 2em;
+  color: white;
+  position: absolute;
+}
+@keyframes scrollMessage {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+

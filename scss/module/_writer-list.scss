@@ -1,0 +1,70 @@
+.writer-list {
+
+  
+  .grid-item {
+    padding: .3em;
+  }
+
+  .img-wrapper {
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 1.8em;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+  }
+  .img-wrapper img {
+    border-radius: 50%;
+  }
+  .img-link, 
+  .img-link:hover, 
+  .img-link:active {
+    text-decoration: none;
+  }
+
+  .img-screen {
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 105%;
+    width: 100%;
+    transition: opacity .15s ease-in-out;
+  }
+  .img-wrapper .caption {
+    color: white;
+    display: block;
+    font-size: .9em;
+    line-height: 1.2;
+    
+  }
+
+  @media (min-width: $bp-small) {
+    .img-wrapper {
+      margin-bottom: 0;
+      overflow: hidden;
+    }
+    .img-wrapper img {
+      border-radius: 0;
+    }
+    .img-screen {
+      align-items: center;
+      background-color: rgba(0,0,0,.4);
+      border-radius: 50%;
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      opacity: 0;
+      top: 0;
+    }
+    .img-wrapper .caption {
+      padding: 10px;
+    }
+    .img-wrapper:hover .img-screen, 
+    .img-wrapper:active .img-screen {
+      opacity: 1;
+    }
+  }
+
+}

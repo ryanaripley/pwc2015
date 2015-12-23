@@ -1,0 +1,17 @@
+.stat-important {
+
+	text-align: center;
+
+	p {
+		font-size: 1.3em;
+	}
+
+	@media (min-width: $bp-small) {
+  	padding: 2em 5%;
+  }
+
+  @media (min-width: $bp-medium) {
+    padding: 2em 20%;
+  }
+
+}

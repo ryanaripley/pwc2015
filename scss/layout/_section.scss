@@ -1,0 +1,112 @@
+body > section,
+.segment {
+  @include group;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+  padding: 2em 6%;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  @media (min-width: $bp-small) {
+  	padding: 2em 10%;
+  }
+  @media (min-width: $bp-medium) {
+    padding: 2em 20%;
+  }
+}
+
+.full {
+  height: 100%;
+  position: relative;
+  @media (max-width: $bp-small) {
+    height: auto;
+  }
+}
+
+.has-borders {
+  &:before, &:after {
+    background: rgba(255,255,255,.3);
+    content: "";
+    display: block;
+    height: .6em;
+    width: 110%;
+    transform: translateX( -1 * 100% * 5% / 110% );
+  }
+  &:before {
+    margin: 1em 0 1.4em;
+  }
+  &:after {
+    margin: 1.4em 0 1em;
+  }
+}
+.bg-white .has-borders {
+  &:before, &:after {
+    background: rgba(0,0,0,.15);
+  }
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bg-white {
+  background: white;
+  color: $pp-black;
+}
+.bg-pp-black {
+	background-color: $pp-black;
+}
+.bg-pp-purple {
+	background-color: $pp-purple;
+}
+.bg-pp-red {
+	background-color: $pp-red;
+}
+.bg-pp-blue {
+	background-color: $pp-blue;
+}
+.bg-pp-ltblue {
+	background-color: $pp-ltblue;
+}
+.bg-sp-black {
+	background-color: $sp-black;
+}
+.bg-sp-purple {
+	background-color: $sp-purple;
+}
+.bg-sp-yellow {
+	background-color: $sp-yellow;
+}
+.bg-sp-blue {
+	background-color: $sp-blue;
+}
+.bg-sp-ltblue {
+	background-color: $sp-ltblue;
+}
+.bg-grad-one {
+	@include grad(one);
+}
+.bg-grad-two {
+	@include grad(two);
+}
+.bg-grad-three {
+	@include grad(three);
+}
+.bg-grad-four {
+	@include grad(four);
+}
+.bg-grad-five {
+	@include grad(five);
+}
+.bg-grad-six {
+	@include grad(six);
+}
+.bg-grad-seven {
+	@include grad(seven);
+}
+
+

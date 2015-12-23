@@ -1,0 +1,288 @@
+@font-face {
+  font-family: 'Wilson-Chisel';
+  src: url('Wilson_ChiselTT.eot'); /* IE9 Compat Modes */
+  src: url('Wilson_ChiselTT.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Wilson_ChiselTT.woff') format('woff'), /* Modern Browsers */
+       url('Wilson_ChiselTT.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Wilson_ChiselTT.svg#bb8d4e2f855c294f683143f428a0bede') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Wilson-Dots';
+  src: url('Wilson_DotsTT.eot'); /* IE9 Compat Modes */
+  src: url('Wilson_DotsTT.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Wilson_DotsTT.woff') format('woff'), /* Modern Browsers */
+       url('Wilson_DotsTT.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Wilson_DotsTT.svg#b6a121bfb649e9c881326d14735a49bc') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Wilson-Inline';
+  src: url('Wilson_InlineTT.eot'); /* IE9 Compat Modes */
+  src: url('Wilson_InlineTT.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Wilson_InlineTT.woff') format('woff'), /* Modern Browsers */
+       url('Wilson_InlineTT.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Wilson_InlineTT.svg#3fbea4b44764fb8f95a37a3cd15812d2') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Wilson-Inverse';
+  src: url('Wilson_InverseTT.eot'); /* IE9 Compat Modes */
+  src: url('Wilson_InverseTT.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Wilson_InverseTT.woff') format('woff'), /* Modern Browsers */
+       url('Wilson_InverseTT.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Wilson_InverseTT.svg#08bf0ac3d723dbc40450fb55247de64a') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Wilson-Rounded';
+  src: url('Wilson_RoundedTT.eot'); /* IE9 Compat Modes */
+  src: url('Wilson_RoundedTT.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Wilson_RoundedTT.woff') format('woff'), /* Modern Browsers */
+       url('Wilson_RoundedTT.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Wilson_RoundedTT.svg#08730bdabe603c05e3d81c6fe3756448') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Wilson-Sans';
+  src: url('Wilson_SansTT.eot'); /* IE9 Compat Modes */
+  src: url('Wilson_SansTT.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Wilson_SansTT.woff') format('woff'), /* Modern Browsers */
+       url('Wilson_SansTT.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Wilson_SansTT.svg#605d74d68285cf544c91983ae241066a') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Wilson-Serif';
+  src: url('Wilson_SerifTT.eot'); /* IE9 Compat Modes */
+  src: url('Wilson_SerifTT.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Wilson_SerifTT.woff') format('woff'), /* Modern Browsers */
+       url('Wilson_SerifTT.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Wilson_SerifTT.svg#0fd350443690f2ecafdb061052ad7590') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Wilson-Shadow';
+  src: url('Wilson_ShadowTT.eot'); /* IE9 Compat Modes */
+  src: url('Wilson_ShadowTT.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Wilson_ShadowTT.woff') format('woff'), /* Modern Browsers */
+       url('Wilson_ShadowTT.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Wilson_ShadowTT.svg#42cd72dcd2b1bef8a878e5c85574d5c2') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Wilson-Stripes';
+  src: url('Wilson_StripesTT.eot'); /* IE9 Compat Modes */
+  src: url('Wilson_StripesTT.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Wilson_StripesTT.woff') format('woff'), /* Modern Browsers */
+       url('Wilson_StripesTT.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Wilson_StripesTT.svg#f5c1132b1e070e0e9ab0341c368f8e0a') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+  text-rendering: optimizeLegibility;
+}
+
+.box.home-style {
+	position: relative;
+	font-size: 30px;
+	line-height: 80px;
+}
+
+.box {
+	position: relative;
+	font-size: 30px;
+	line-height: 80px;
+}
+
+.node-inspiration .box {
+  line-height: 40px;
+}
+
+.double-second {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-size: 80px;
+}
+
+.double-first {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	font-size: 80px;
+}
+
+.node-inspiration .double-second,
+.node-inspiration .double-first {
+  font-size: 40px;
+}
+
+/* Home Page */
+.home-style .double-first .field {
+	font-family: 'Wilson-Inline';
+	color: #ffffff;
+}
+
+.home-style .double-second .field {	
+	font-family: 'Wilson-Shadow';
+	color: #94d6dc;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+
+/* Inspirations */
+.font1 .double-first .field {
+	font-family: 'Wilson-Chisel';
+	color: #93d6dc;
+}
+
+.font1 .double-second .field {
+	font-family: 'Wilson-Inline';
+	color: #860051;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	filter: alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+}
+
+.font2 .double-first .field {
+	font-family: 'Wilson-Shadow';
+	color: #ed3224;
+}
+
+.font2 .double-second .field {
+	font-family: 'Wilson-Serif';
+	color: #9bbbcc;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	filter: alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+}
+
+.font3 .double-first .field {
+	font-family: 'Wilson-Chisel';
+	color: #caaad1;
+}
+
+.font3 .double-second .field {
+	font-family: 'Wilson-Dots';
+	color: #005b98;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	filter: alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+}
+
+.font4 .double-first .field {
+	font-family: 'Wilson-Serif';
+	color: #f6ec4d;
+}
+
+.font4 .double-second .field {	
+	font-family: 'Wilson-Inline';
+	color: #00b2dc;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	filter: alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+}
+
+.font5 .double-first .field {
+	font-family: 'Wilson-Inline';
+	color: #93d6dc;
+}
+
+.font5 .double-second .field {	
+	font-family: 'Wilson-Inverse';
+	color: #860051;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
+}
+
+.font6 .double-first .field {
+	font-family: 'Wilson-Chisel';
+	color: #9bbbcc;
+}
+
+.font6 .double-second .field {	
+	font-family: 'Wilson-Stripes';
+	color: #ed3224;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	filter: alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+}
+
+.font7 .double-first .field {
+	font-family: 'Wilson-Stripes';
+	color: #caaad1;
+}
+
+.font7 .double-second .field {	
+	font-family: 'Wilson-Dots';
+	color: #005b98;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	filter: alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+}
+
+.font8 .double-first .field {
+	font-family: 'Wilson-Inverse';
+	color: #f6ec4d;
+}
+
+.font8 .double-second .field {	
+	font-family: 'Wilson-Stripes';
+	color: #00b2dc;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+	filter: alpha(opacity=75);
+	-moz-opacity: 0.75;
+	-khtml-opacity: 0.75;
+	opacity: 0.75;
+}

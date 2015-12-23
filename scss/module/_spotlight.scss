@@ -1,0 +1,82 @@
+.spotlight {
+
+	header.circle {
+		margin-bottom: 1em;
+		text-align: center;
+
+		.headshot img {
+			margin: 0 auto;
+			border-radius: 50%;
+			width: 70%;
+		}
+
+		.name h4 {
+			font-size: 1.2em;
+			margin: .4em 0 0;
+		}
+		.name p {
+			font-size: 1.2em;
+			margin-top: 0;
+		}
+	}
+
+	@media (min-width: 430px) {
+
+		header.circle {
+			@include group;
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			text-align: left;
+
+			.headshot {
+				padding-right: 1em;
+				max-width: 10em;
+				text-align: right;
+			}
+
+			.headshot img {
+				margin: 0;
+				width: auto;
+			}
+
+			.name {
+				display: inline-block;
+				font-size: 1.2em;
+			}
+
+			.name h4, 
+			.name p {
+				font-size: 1em;
+			}
+
+		}
+	}
+
+	header.rect {
+		text-align: center;
+
+		.name h4 {
+			font-size: 1.2em;
+			margin: 1em 0 0;
+		}
+		.name p {
+			font-size: 1.2em;
+			margin-top: 0;
+			margin-bottom: .8em;
+		}
+
+		.headshot {
+			margin-bottom: 1.5em;
+		}
+
+		@media (min-width: $bp-small) {
+			.headshot img {
+				margin: 0 auto;
+				width: 80%;
+			}
+		}
+
+	}
+
+}

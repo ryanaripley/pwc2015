@@ -1,0 +1,29 @@
+
+$font-disp: 'WilsonText-RegularWeb', sans-serif;
+$font-disp-bold: 'WilsonText-Bold', sans-serif;
+$font-disp-italic: 'WilsonText-ItalicWeb', sans-serif;
+
+$font-para: 'WilsonTextAlt-RegularWeb', sans-serif;
+$font-para-bold: 'WilsonTextAlt-Bold', sans-serif;
+$font-para-italic: 'WilsonTextAlt-ItalicWeb', sans-serif;
+
+
+body {
+	font-family: $font-para;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-disp-bold;
+}
+
+b,
+strong,
+.bold {
+	font-family: $font-para-bold;
+	font-weight: normal;
+}
+
+i,
+em {
+	font-family: $font-para-italic;
+	font-style: normal;
+}

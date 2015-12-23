@@ -1,0 +1,50 @@
+div[class^="grid-"] {
+		@include group;
+		margin-bottom: 1em;
+	}
+
+.grid-item {
+	box-sizing: border-box;
+	display: inline-block;
+	float: left;
+	width: 33.3333333%;
+}
+
+@media (min-width: $bp-small) {
+
+	.grid-4 .grid-item,
+	.grid-5 .grid-item,
+	.grid-6 .grid-item {
+		width: 25%;
+	}
+
+}
+
+
+@media (min-width: $bp-medium) {
+
+	.grid-2 .grid-item {
+		width: 50%;
+	}
+
+	.grid-3 .grid-item {
+		width: 33.3333333%;
+	}
+
+	.grid-4 .grid-item {
+		width: 25%;
+	}
+
+	.grid-5 .grid-item {
+		width: 20%;
+	}
+
+	.grid-6 .grid-item {
+		width: 16.66666666%;
+	}
+
+  .grid-item {
+
+  }
+
+}

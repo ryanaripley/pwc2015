@@ -1,0 +1,49 @@
+@mixin group {
+	&:after {
+    	content: "";
+    	display: table;
+    	clear: both;
+	}
+}
+@mixin grad($type) {
+  @if $type == one {
+  	background-image: linear-gradient($pp-ltblue,$pp-purple);
+  };
+  @if $type == two {
+  	background-image: linear-gradient($pp-blue,$sp-blue);
+  };
+  @if $type == three {
+  	background-image: linear-gradient($pp-red,$sp-blue);
+  };
+  @if $type == four {
+  	background-image: linear-gradient($pp-ltblue,$sp-yellow);
+  };
+  @if $type == five {
+    background-image: linear-gradient($pp-purple,$sp-ltblue);
+  };
+  @if $type == six {
+    background-image: linear-gradient($pp-purple, $sp-blue);
+  };
+  @if $type == seven {
+    background-image: linear-gradient($tp-purple,$tp-red);
+  };
+}
+
+@mixin bg-gradient-animation {
+  /* Background */
+  background-image: linear-gradient(to right, $pp-blue,$pp-ltblue,$sp-yellow,$pp-purple,$pp-blue);
+  background-size: 600%;
+  background-position: 0 0;
+  /* Animation */
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-name: bg-gradients;
+}
+@keyframes bg-gradients {
+    0%   {background-position: 0 0;}
+    25% {background-position: 50% 0;}
+    50% {background-position: 90% 0;}
+    60% {background-position: 60%;}
+    75% {background-position: 40%;}
+    100%  {background-position: 0 0;}
+}
