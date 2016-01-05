@@ -1,7 +1,7 @@
 .stat-table {
 
 	table {
-		border-top: 2px solid rgba(255,255,255,.3);
+		border-top: 2px solid rgba(255,255,255,.4);
 		margin: 0 auto 1.5em;
 		width: 100%;
 
@@ -15,9 +15,19 @@
 
 	}
 
+	tr {
+		border-bottom: 2px solid rgba(255,255,255,.2);
+		
+	}
+
+	tr:last-of-type {
+		border-bottom: 2px solid rgba(255,255,255,.4);
+
+	}
+
 	td {
-		padding: .2em 0;
-		border-bottom: 2px solid rgba(255,255,255,.3);
+		padding: .3em 0;
+		
 	}
 
 	td:last-child {
