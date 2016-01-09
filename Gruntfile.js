@@ -38,7 +38,7 @@ module.exports = function(grunt) {
     uglify: {
       build: {
         src: ['js/libs/*.js', 'js/global.js'],
-        dest: 'js/build/global.min.js'
+        dest: 'js/global.min.js'
       }
     },
     sass: {                              // Task
@@ -55,12 +55,13 @@ module.exports = function(grunt) {
       options: {
         map: true,
         processors: [
-          require('autoprefixer')({browsers: ['last 1 version']})
+          require('autoprefixer')({browsers: ['last 1 version']}),
+          require('cssnano')() // minify the result
         ]
       },
       dist: {
         src: "css/global-unprefixed.css",
-        dest: "css/global.css"
+        dest: "css/global.min.css"
       }
     },
     watch: {
@@ -99,7 +100,27 @@ module.exports = function(grunt) {
       options: {
         port: 9000
       }
-    }
+    },
+    copy: {
+      main: {
+        files: [
+          { 
+            expand: true,
+            src: [
+              '*.html', 
+              'css/global.min.css', 
+              'js/global.min.js', 
+              'fonts/**/*', 
+              'img/**/*', 
+              'svg/**/*',
+              '*.txt',
+              '.htaccess'
+              ], 
+            dest: 'build/',
+          }
+        ]
+      }
+    },
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -111,9 +132,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-markdown');
   grunt.loadNpmTasks('grunt-includes');
   grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
 
   // Default task(s).
   grunt.registerTask('default', ['jade', 'uglify', 'sass', 'postcss:dist', 'watch']);
+
+  grunt.registerTask('build', ['jade', 'uglify', 'sass', 'postcss:dist', 'copy']);
 
 };

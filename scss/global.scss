@@ -8,8 +8,6 @@
 	@import 'base/fonts';
 	@import 'base/base';
 
-	@import 'main';
-
 	@import 'layout/grid';
 	@import 'layout/page';
 	@import 'layout/section';
@@ -21,6 +19,8 @@
 	@import 'module/stat-important';
 	@import 'module/stat-table';
 	@import 'module/spotlight';
+	@import 'module/administrative';
+	@import 'module/supporters';
 
 }
 

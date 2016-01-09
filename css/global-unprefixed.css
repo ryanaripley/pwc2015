@@ -756,39 +756,6 @@
     max-width: 100%;
   }
 
-  .number {
-    font-size: 3em;
-    padding-right: .4em;
-    position: absolute;
-    left: 0;
-    line-height: 1.1;
-    text-align: right;
-    width: 1em;
-  }
-}
-@media screen and (max-width: 650px) {
-  .number {
-    position: relative;
-    width: 100%;
-    text-align: left;
-  }
-}
-
-@media screen {
-  h1 {
-    font-size: 3em;
-    line-height: 1.1;
-    margin-top: .1em;
-  }
-
-  img.rect, iframe {
-    border-radius: 2px;
-    display: block;
-    margin-top: .5em;
-    max-width: 100%;
-    width: 600px;
-  }
-
   div[class^="grid-"] {
     margin-bottom: 1em;
   }
@@ -802,35 +769,63 @@
     box-sizing: border-box;
     display: inline-block;
     float: left;
+  }
+}
+@media screen and (max-width: 649px) {
+  .grid-item {
     width: 33.3333333%;
+  }
+  .grid-item:nth-of-type(3n + 1) {
+    clear: both;
   }
 }
 @media screen and (min-width: 650px) {
-  .grid-4 .grid-item,
-  .grid-5 .grid-item,
-  .grid-6 .grid-item {
-    width: 25%;
-  }
-}
-@media screen and (min-width: 1050px) {
   .grid-2 .grid-item {
     width: 50%;
+  }
+  .grid-2 .grid-item:nth-of-type(2n + 1) {
+    clear: both;
   }
 
   .grid-3 .grid-item {
     width: 33.3333333%;
   }
-
+  .grid-3 .grid-item:nth-of-type(3n + 1) {
+    clear: both;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 1049px) {
+  .grid-4 .grid-item,
+  .grid-5 .grid-item,
+  .grid-6 .grid-item {
+    width: 25%;
+  }
+  .grid-4 .grid-item:nth-of-type(4n + 1),
+  .grid-5 .grid-item:nth-of-type(4n + 1),
+  .grid-6 .grid-item:nth-of-type(4n + 1) {
+    clear: both;
+  }
+}
+@media screen and (min-width: 1050px) {
   .grid-4 .grid-item {
     width: 25%;
+  }
+  .grid-4 .grid-item:nth-of-type(4n + 1) {
+    clear: both;
   }
 
   .grid-5 .grid-item {
     width: 20%;
   }
+  .grid-5 .grid-item:nth-of-type(5n + 1) {
+    clear: both;
+  }
 
   .grid-6 .grid-item {
     width: 16.66666666%;
+  }
+  .grid-6 .grid-item:nth-of-type(6n + 1) {
+    clear: both;
   }
 }
 @media screen {
@@ -911,6 +906,23 @@
 }
 
 @media screen {
+  .full-height {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 8em;
+    padding-bottom: 8em;
+  }
+}
+@media screen and (min-width: bp-small) {
+  .full-height {
+    height: 90%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+}
+
+@media screen {
   .has-borders:before, .has-borders:after {
     background: rgba(255, 255, 255, 0.3);
     content: "";
@@ -938,6 +950,10 @@
   .bg-white {
     background: white;
     color: #232323;
+  }
+  .bg-white a:hover,
+  .bg-white a:focus {
+    color: #054f7d;
   }
 
   .bg-pp-black {
@@ -1008,6 +1024,26 @@
     background-image: linear-gradient(#ad4b70, #f15a51);
   }
 
+  .pp-black {
+    color: #232323;
+  }
+
+  .pp-purple {
+    color: #851951;
+  }
+
+  .pp-red {
+    color: #ee370d;
+  }
+
+  .pp-blue {
+    color: #054f7d;
+  }
+
+  .pp-ltblue {
+    color: #00a7cf;
+  }
+
   .site-header {
     background: #232323;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
@@ -1021,6 +1057,10 @@
   .site-header .site-branding > .menu-toggle {
     float: right;
     margin-left: auto;
+  }
+  .site-header .site-branding .pwc-mark {
+    padding: .7rem 1.2rem;
+    width: 5.2rem;
   }
   .site-header ul {
     box-shadow: -5px 0 10px rgba(0, 0, 0, 0.3);
@@ -1405,6 +1445,65 @@
   }
 }
 
+@media screen {
+  .facebook-section .top-fb-post {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  .most-read-article .article-link {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  #supporters h3 {
+    margin-bottom: .4em;
+  }
+  #supporters p {
+    color: #58595b;
+    font-size: .8em;
+    margin: 0 0 2.5em;
+  }
+  #supporters h4 {
+    font-size: .8em;
+    margin-bottom: 0;
+  }
+  #supporters ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+  }
+  #supporters ul:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #supporters li {
+    display: inline;
+    float: left;
+    font-size: .8em;
+    margin-bottom: .4em;
+    padding-right: 1em;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 650px) {
+  #supporters li {
+    font-size: .7em;
+    width: 33.3333333%;
+  }
+}
+
+@media screen {
+  #thanks h2 {
+    text-transform: none;
+  }
+  #thanks .thanks-logo {
+    margin-top: 3em;
+    width: 10em;
+  }
+}
 @media print {
   body {
     color: black;

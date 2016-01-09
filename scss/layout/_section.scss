@@ -26,6 +26,23 @@ body > section,
   }
 }
 
+.full-height {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 8em;
+  padding-bottom: 8em;
+
+  @media (min-width: bp-small) {
+    height: 90%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  
+  }
+
+}
+
+
 .has-borders {
   &:before, &:after {
     background: rgba(255,255,255,.3);
@@ -56,6 +73,10 @@ body > section,
 .bg-white {
   background: white;
   color: $pp-black;
+  a:hover,
+  a:focus {
+    color: $pp-blue;
+  }
 }
 .bg-pp-black {
 	background-color: $pp-black;
@@ -107,6 +128,22 @@ body > section,
 }
 .bg-grad-seven {
 	@include grad(seven);
+}
+
+.pp-black {
+  color: $pp-black;
+}
+.pp-purple {
+  color: $pp-purple;
+}
+.pp-red {
+  color: $pp-red;
+}
+.pp-blue {
+  color: $pp-blue;
+}
+.pp-ltblue {
+  color: $pp-ltblue;
 }
 
 

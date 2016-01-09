@@ -1,21 +1,52 @@
 div[class^="grid-"] {
-		@include group;
-		margin-bottom: 1em;
-	}
+	@include group;
+	margin-bottom: 1em;
+}
 
 .grid-item {
 	box-sizing: border-box;
 	display: inline-block;
 	float: left;
-	width: 33.3333333%;
+	
+}
+
+@media (max-width: $bp-small - 1) {
+	.grid-item {
+		width: 33.3333333%;
+		&:nth-of-type(3n + 1) {
+			clear: both;
+		}
+	}
 }
 
 @media (min-width: $bp-small) {
+
+	.grid-2 .grid-item {
+		width: 50%;
+		&:nth-of-type(2n + 1) {
+			clear: both;
+		}
+	}
+
+	.grid-3 .grid-item {
+		width: 33.3333333%;
+		&:nth-of-type(3n + 1) {
+			clear: both;
+		}
+	}
+
+}
+
+
+@media (min-width: $bp-small) and (max-width: $bp-medium - 1) {
 
 	.grid-4 .grid-item,
 	.grid-5 .grid-item,
 	.grid-6 .grid-item {
 		width: 25%;
+		&:nth-of-type(4n + 1) {
+			clear: both;
+		}
 	}
 
 }
@@ -23,24 +54,26 @@ div[class^="grid-"] {
 
 @media (min-width: $bp-medium) {
 
-	.grid-2 .grid-item {
-		width: 50%;
-	}
-
-	.grid-3 .grid-item {
-		width: 33.3333333%;
-	}
-
 	.grid-4 .grid-item {
 		width: 25%;
+		&:nth-of-type(4n + 1) {
+			clear: both;
+		}
 	}
 
 	.grid-5 .grid-item {
 		width: 20%;
+		&:nth-of-type(5n + 1) {
+			clear: both;
+
+		}
 	}
 
 	.grid-6 .grid-item {
 		width: 16.66666666%;
+		&:nth-of-type(6n + 1) {
+			clear: both;
+		}
 	}
 
   .grid-item {
