@@ -863,7 +863,6 @@
 @media screen {
   body > section,
   .segment {
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -884,6 +883,7 @@
   body > section,
   .segment {
     padding: 2em 10%;
+    background-attachment: fixed;
   }
 }
 @media screen and (min-width: 1050px) {
@@ -1024,6 +1024,57 @@
     background-image: linear-gradient(#ad4b70, #f15a51);
   }
 
+  section[class^="bg-image-"] {
+    background-color: #333;
+    background: no-repeat center center;
+    background-size: cover;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+}
+@media screen and (min-width: 650px) {
+  section[class^="bg-image-"] {
+    background: no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+
+@media screen {
+  section.bg-image-audience {
+    background-image: url(../img/background-audience.jpg);
+  }
+
+  section.bg-image-staff {
+    background-image: url(../img/background-staff.jpg);
+  }
+
+  section.bg-image-marie-rosetta {
+    background-image: url(../img/background-marie-rosetta.jpg);
+  }
+
+  section.bg-image-class {
+    background-image: url(../img/background-class.jpg);
+  }
+
+  section.bg-image-realness {
+    background-image: url(../img/background-realness.jpg);
+  }
+
+  section.bg-image-qui {
+    background-image: url(../img/background-qui.jpg);
+  }
+
+  section.bg-image-mcknight-wip {
+    background-image: url(../img/background-mcknight-wip.jpg);
+  }
+
+  section.bg-image-kira {
+    background-image: url(../img/background-kira.jpg);
+  }
+
+  section.bg-image-writers {
+    background-image: url(../img/background-writers.jpg);
+  }
+
   .pp-black {
     color: #232323;
   }
@@ -1085,7 +1136,7 @@
   .site-header a {
     display: inline-block;
     font-family: "WilsonText-Bold";
-    font-size: 1em;
+    font-size: 1rem;
     letter-spacing: .05em;
     line-height: 1em;
     padding: .8em 1.2em .6em;
@@ -1104,7 +1155,7 @@
     color: #94d6dc;
   }
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 700px) {
   .site-header:after {
     content: "";
     display: table;
@@ -1149,7 +1200,7 @@
     padding-left: 0;
   }
 }
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 915px) {
   .site-header .site-subtitle {
     display: inline-block;
   }
@@ -1160,11 +1211,6 @@
     background-color: #054f7d;
     position: relative;
     z-index: 15;
-  }
-}
-@media screen and (min-width: 650px) {
-  #title {
-    height: 96%;
     /* Background */
     background-image: linear-gradient(to right, #054f7d, #00a7cf, #efe348, #851951, #054f7d);
     background-size: 600%;
@@ -1173,6 +1219,11 @@
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-name: bg-gradients;
+  }
+}
+@media screen and (min-width: 650px) {
+  #title {
+    height: 96%;
   }
 }
 @media screen {
@@ -1325,6 +1376,8 @@
 
 @media screen {
   .stat-important {
+    padding-top: 4em;
+    padding-bottom: 4em;
     text-align: center;
   }
   .stat-important p {
@@ -1333,12 +1386,12 @@
 }
 @media screen and (min-width: 650px) {
   .stat-important {
-    padding: 2em 5%;
+    padding: 4em 5%;
   }
 }
 @media screen and (min-width: 1050px) {
   .stat-important {
-    padding: 2em 20%;
+    padding: 4em 20%;
   }
 }
 

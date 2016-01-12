@@ -2,10 +2,11 @@
   background-color: $pp-blue;
   position: relative;
   z-index: 15;
+  @include bg-gradient-animation;
 
   @media (min-width: $bp-small) {
     height: 96%;
-    @include bg-gradient-animation;
+    
   }
 
   .subtitle {

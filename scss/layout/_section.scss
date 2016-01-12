@@ -1,7 +1,6 @@
 body > section,
 .segment {
   @include group;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,6 +11,7 @@ body > section,
   -webkit-font-smoothing: antialiased;
   @media (min-width: $bp-small) {
   	padding: 2em 10%;
+    background-attachment: fixed;
   }
   @media (min-width: $bp-medium) {
     padding: 2em 20%;
@@ -129,6 +129,48 @@ body > section,
 .bg-grad-seven {
 	@include grad(seven);
 }
+
+
+section[class^="bg-image-"] {
+  background-color: #333;
+  background: no-repeat center center;
+  background-size: cover;
+  text-shadow: 1px 1px 3px rgba(0,0,0,.5);
+
+  @media (min-width: $bp-small) {
+    background: no-repeat center center fixed;
+    background-size: cover;
+  }
+
+}
+section.bg-image-audience {
+  background-image: url(../img/background-audience.jpg);
+}
+section.bg-image-staff {
+  background-image: url(../img/background-staff.jpg);
+}
+section.bg-image-marie-rosetta {
+  background-image: url(../img/background-marie-rosetta.jpg);
+}
+section.bg-image-class {
+  background-image: url(../img/background-class.jpg);
+}
+section.bg-image-realness {
+  background-image: url(../img/background-realness.jpg);
+}
+section.bg-image-qui {
+  background-image: url(../img/background-qui.jpg);
+}
+section.bg-image-mcknight-wip {
+  background-image: url(../img/background-mcknight-wip.jpg);
+}
+section.bg-image-kira {
+  background-image: url(../img/background-kira.jpg);
+}
+section.bg-image-writers {
+  background-image: url(../img/background-writers.jpg);
+}
+
 
 .pp-black {
   color: $pp-black;

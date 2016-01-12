@@ -1,5 +1,7 @@
 .stat-important {
 
+	padding-top: 4em;
+	padding-bottom: 4em;
 	text-align: center;
 
 	p {
@@ -7,11 +9,12 @@
 	}
 
 	@media (min-width: $bp-small) {
-  	padding: 2em 5%;
-  }
+		padding: 4em 5%;
 
-  @media (min-width: $bp-medium) {
-    padding: 2em 20%;
-  }
+	}
+
+	@media (min-width: $bp-medium) {
+		padding: 4em 20%;
+	}
 
 }

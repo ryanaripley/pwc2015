@@ -114,7 +114,9 @@ module.exports = function(grunt) {
               'img/**/*', 
               'svg/**/*',
               '*.txt',
-              '.htaccess'
+              '.htaccess',
+              '*.png',
+              '*.ico'
               ], 
             dest: 'build/',
           }
