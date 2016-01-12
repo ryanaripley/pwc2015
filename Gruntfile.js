@@ -125,7 +125,6 @@ module.exports = function(grunt) {
     },
   });
 
-  // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-postcss');
@@ -135,7 +134,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-includes');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-copy');
-
 
   // Default task(s).
   grunt.registerTask('default', ['jade', 'uglify', 'sass', 'postcss:dist', 'watch']);
