@@ -9,7 +9,7 @@ body > section,
   padding: 2em 6%;
   position: relative;
   -webkit-font-smoothing: antialiased;
-  @media (min-width: $bp-small) {
+  @media (min-width: 770px) {
   	padding: 2em 10%;
     background-attachment: fixed;
   }
@@ -26,43 +26,47 @@ body > section,
   }
 }
 
-.full-height {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding-top: 8em;
-  padding-bottom: 8em;
+@media screen { 
 
-  @media (min-width: bp-small) {
-    height: 90%;
-    padding-top: 2em;
-    padding-bottom: 2em;
+  .full-height {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 8em;
+    padding-bottom: 8em;
+
+    @media (min-width: bp-small) {
+      height: 90%;
+      padding-top: 2em;
+      padding-bottom: 2em;
+    
+    }
+
+  }
+
+  .has-borders {
+    &:before, &:after {
+      background: rgba(255,255,255,.3);
+      content: "";
+      display: block;
+      height: .6em;
+      width: 110%;
+      transform: translateX( -1 * 100% * 5% / 110% );
+    }
+    &:before {
+      margin: 1em 0 1.4em;
+    }
+    &:after {
+      margin: 1.4em 0 1em;
+    }
+  }
+
+  .bg-white .has-borders {
+    &:before, &:after {
+      background: rgba(0,0,0,.15);
+    }
+  }
   
-  }
-
-}
-
-
-.has-borders {
-  &:before, &:after {
-    background: rgba(255,255,255,.3);
-    content: "";
-    display: block;
-    height: .6em;
-    width: 110%;
-    transform: translateX( -1 * 100% * 5% / 110% );
-  }
-  &:before {
-    margin: 1em 0 1.4em;
-  }
-  &:after {
-    margin: 1.4em 0 1em;
-  }
-}
-.bg-white .has-borders {
-  &:before, &:after {
-    background: rgba(0,0,0,.15);
-  }
 }
 
 .section-title {
@@ -137,7 +141,7 @@ section[class^="bg-image-"] {
   background-size: cover;
   text-shadow: 1px 1px 3px rgba(0,0,0,.5);
 
-  @media (min-width: $bp-small) {
+  @media (min-width: 770px) {
     background: no-repeat center center fixed;
     background-size: cover;
   }
@@ -169,6 +173,9 @@ section.bg-image-kira {
 }
 section.bg-image-writers {
   background-image: url(../img/background-writers.jpg);
+}
+section.bg-image-cocked {
+  background-image: url(../img/background-cocked.jpg);
 }
 
 

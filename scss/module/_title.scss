@@ -1,4 +1,5 @@
 #title {
+  
   background-color: $pp-blue;
   position: relative;
   z-index: 15;
@@ -15,9 +16,9 @@
     margin-top: .4em;
   }
 
-  .pwc-logo {
+  #pwc-logo {
     margin-bottom: 1em;
-    width: 16em;
+    width: 18em;
   }
 
   .logo-wrapper {
@@ -27,13 +28,17 @@
 }
 
 .title-inside {
+
   padding: 4em 0 8em;
-  @media (min-width: $bp-small) {
+
+  @media screen and(min-width: $bp-small) {
     padding: 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+
   }
+
 }
 
 .scroll-message {
@@ -47,4 +52,6 @@
   50% {opacity: 0;}
   100% {opacity: 1;}
 }
+
+
 

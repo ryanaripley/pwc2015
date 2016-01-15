@@ -66,7 +66,7 @@
 		color: $sp-blue;
 	}
 
-	@media (min-width: 700px) {
+	@media (min-width: 750px) {
 
 		@include group;
 
@@ -81,13 +81,16 @@
 		ul {
 			background: none;
 			box-shadow: none;
-			display: flex;
 			float: right;
 			min-width: auto;
 			position: relative;
 				top: auto;
 				right: auto;
 				left: auto;
+
+			li {
+				float: left;
+			}
 		}
 
 		.site-subtitle,

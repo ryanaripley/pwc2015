@@ -55,7 +55,7 @@ module.exports = function(grunt) {
       options: {
         map: true,
         processors: [
-          require('autoprefixer')({browsers: ['last 1 version']}),
+          require('autoprefixer')({browsers: ['last 3 version']}),
           require('cssnano')() // minify the result
         ]
       },

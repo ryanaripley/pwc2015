@@ -40,7 +40,7 @@
     
   }
 
-  @media (min-width: $bp-small) {
+  @media screen and (min-width: $bp-small) {
     .img-wrapper {
       margin-bottom: 0;
       overflow: hidden;
